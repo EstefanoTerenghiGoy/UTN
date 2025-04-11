@@ -1,23 +1,29 @@
 opcion = "s"
 cant_jugadores = 0
 
+#Punto 1
 cantidad_jugadores_plano_19_25 = 0
 
+#Punto 2
 nombre_menor_50pts = ""
 categoria_menor_50pts = ""
 edad_menor_50pts = 61
 menor_50pts = False
 
+#Punto 3
 cant_experto = 0
 porc_experto = 0
 
+#Punto 4
 cant_avanzado = 0
 total_edades_avanzado = 0
 
+#Punto 5
 cant_plano = 0
 cant_liftado = 0
 cant_cortado = 0
 mayor_saque = 0
+
 
 while opcion == "s":
     nombre = input("Ingrese el nombre del jugador: ")
@@ -86,21 +92,25 @@ else:
 
 if cant_experto > 0:
     porc_experto = (cant_experto * 100) / cant_jugadores
-    print(f"El porcentaje de jugadores expertos es: {porc_experto:.2f}%")
+    print(f"El porcentaje de jugadores expertos es: {porc_experto}%")
 else:
     print("No hay expertos")
 
 if cant_avanzado > 0:
     promedio_avanzado = total_edades_avanzado / cant_avanzado
-    print(f"El promedio de edad de jugadores avanzados es: {promedio_avanzado:.2f}")
+    print(f"El promedio de edad de jugadores avanzados es: {promedio_avanzado}")
+else:
+    print("Error")
 
-mayor_saque = cant_cortado
+
+mayor_saque = cant_cortado #5
 saque_mas_usado = "Cortado"
 
-if cant_plano > cant_cortado:
+if cant_plano > cant_cortado: #3 > 5
     mayor_saque = cant_plano
     saque_mas_usado = "Plano"
-if cant_liftado > mayor_saque:
+
+if cant_liftado > mayor_saque: #9 > 5
     mayor_saque = cant_liftado
     saque_mas_usado = "Liftado"
 

@@ -43,7 +43,7 @@ while vueltas <= 10:
     vueltas += 1
     
 if cant_masculino_iot_ia_25_50 > 0:
-    print(f"La cantidad de empleados masculinos con tecnología IOT - IA entre 25 y 50 es: {cant_masculino_iot_ia_25_50}") #bien
+    print(f"La cantidad de empleados masculinos con tecnología IOT - IA entre 25 y 50 es: {cant_masculino_iot_ia_25_50}")
 else:
     print("No hay empleados masculinos con tecnología IOT - IA entre 25 y 50")
 
@@ -54,6 +54,6 @@ else:
     print("No hay empleados no femeninos que no usan tecnología IA entre 33 y 40")
     
 if edad_masculino_mayor > 0:
-    print(f"El empleado masculino con mayor edad es: {nombre_masculino_mayor} y su tecnología es: {tecnologia_masculino_mayor}")
+    print(f"El empleado masculino con mayor edad es: {nombre_masculino_mayor}, su edad es {edad_masculino_mayor} y su tecnología es: {tecnologia_masculino_mayor}")
 else:
     print("No hay empleados masculinos")
