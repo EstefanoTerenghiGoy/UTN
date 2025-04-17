@@ -2,4 +2,4 @@ git add . -> añade todos los archivos a staging (listos para el siguiente commi
 
 git commit -m "mensaje" -> hace commit a todos los archivos en staging con un mensaje (-m)
 
-git push origin master -> 
+git push origin master -> hace push a todos los archivos en commit en la ruta (origin) previamente elegida, en la branch (master) seleccionada
