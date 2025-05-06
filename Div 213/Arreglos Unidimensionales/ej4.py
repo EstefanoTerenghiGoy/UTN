@@ -15,10 +15,11 @@ def buscar_numero(numeros: list, numero: int) -> bool:
     for i in range(len(numeros)):
         if numeros[i] == numero:
             encontrado = True
+            break
     return encontrado
 
 numeros = [1, 2, 3, 4, 5, 7, 8, 9, 10]
-numero = 6
+numero = 2
 if buscar_numero(numeros, numero):
     print("El número está en la lista")
 else:

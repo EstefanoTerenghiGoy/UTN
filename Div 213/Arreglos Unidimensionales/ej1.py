@@ -11,3 +11,4 @@ def pedir_y_mostrar_nombres()->list:
 nombres = pedir_y_mostrar_nombres()
 for nombre in nombres:
     print(pedir_y_mostrar_nombres())
+    
