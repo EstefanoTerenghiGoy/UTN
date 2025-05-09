@@ -77,9 +77,14 @@ def usuario_de_menor_edad_ordenados() -> list:
         for j in range(i+1, len(usuarios_menor_edad)):
             nombre_i = usuarios_menor_edad[i][0]
             nombre_j = usuarios_menor_edad[j][0]
-            if nombre_j < nombre_i:
+            edad_i = usuarios_menor_edad[i][7]  
+            edad_j = usuarios_menor_edad[j][7]
+            if nombre_j < nombre_i and edad_i == edad_j:
                 swap_multiple(usuarios_menor_edad, i, j)
     return usuarios_menor_edad
+
+
+
 
 def usuarios_mexico_brasil_cp_8000_ordenados():
     datos_usuarios_mexico_brasil = usuarios_mexico_brasil_cp_8000()
@@ -95,6 +100,6 @@ def usuarios_mexico_brasil_cp_8000_ordenados():
     return datos_usuarios_mexico_brasil
 
 def swap_multiple(datos_a_intercambiar: list, i:int, j:int):
-        aux = datos_a_intercambiar[i]
-        datos_a_intercambiar[i] = datos_a_intercambiar[j]
-        datos_a_intercambiar[j] = aux 
+    aux = datos_a_intercambiar[i]
+    datos_a_intercambiar[i] = datos_a_intercambiar[j]
+    datos_a_intercambiar[j] = aux 

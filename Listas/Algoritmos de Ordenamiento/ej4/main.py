@@ -44,6 +44,7 @@ def menu():
                         case 10:
                             for usuario in usuario_de_menor_edad_ordenados():
                                 print(usuario)
+                            # usuario_de_menor_edad_ordenados2()
                         case 11:
                             for usuario in usuarios_mexico_brasil_cp_8000_ordenados():
                                 print(usuario)
