@@ -42,3 +42,6 @@ ordenar_por_nombre(Nombres, Edades)
 
 for i in range(len(Nombres)):
     print(f"{Nombres[i]}: {Edades[i]}")
+    
+
+print("Mostrar", 50 * 80)

@@ -32,15 +32,3 @@ ordenar_por_nombre(Estudiantes, Apellidos, Nota)
 
 for i in range(len(Estudiantes)):
     print(f"{Estudiantes[i]} {Apellidos[i]}: {Nota[i]}")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
