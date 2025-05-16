@@ -1,6 +1,13 @@
 def verificar_tesoro(mapa: list, x: int, y: int) -> int:
-    if mapa[x][y] == 1:
+    '''
+    Devuelve 0 si se encuentra el valor 1 en "mapa", o
+    la distancia hasta él en caso contrario
+    '''
+    
+    #Si se encuentra, devuelve 0
+    if mapa[x][y] == 1: 
         return 0
+    #Sino, encuentro el tesoro y calculo la distancia hacia él
     else:
         for i in range(len(mapa)):
             for j in range(len(mapa[i])):
@@ -20,8 +27,8 @@ mapa = [
 ]
 opcion = "s"
 while opcion == "s":
-    coordenada_x = int(input("Ingrese la coordenada X (Entre 0 y 4 inclusive): "))
-    coordenada_y = int(input("Ingrese la coordenada Y (Entre 0 y 4 inclusive): "))
+    coordenada_x = int(input("Ingrese la coordenada X (Entre 0 y 4 inclusive): ")) #No se pide verificar
+    coordenada_y = int(input("Ingrese la coordenada Y (Entre 0 y 4 inclusive): ")) 
     verificar = verificar_tesoro(mapa, coordenada_x, coordenada_y)
     if verificar == 0:
         print("¡Encontraste el tesoro!")
